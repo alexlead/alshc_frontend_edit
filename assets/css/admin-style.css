@@ -1,0 +1,20 @@
+.table{
+    display: table;  
+}
+.row{
+    display: table-row;
+    border: 1px solid #000;
+}
+.row:nth-child(2n+1){
+    background: #ccc;
+}
+.row:hover{
+    background: #999;
+}
+.cell{
+    display: table-cell;
+    min-width: 150px;
+}
+.cell:nth-child(n+2){
+    text-align: center;
+}

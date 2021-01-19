@@ -1,0 +1,44 @@
+.editor-post {
+    width: 100%;
+    margin: 10px 0;
+}
+
+input.editor-post,
+select.editor-post {
+    margin: 10px 0;
+    height: 60px;
+}
+
+.author-details {
+    display: flex;
+    color: #000;
+    margin: 20px 0;
+}
+
+.author-details a {
+    color: #000;
+    text-decoration: none;
+}
+
+.author-details>.post-author-avatar {
+    margin-right: 20px;
+}
+
+.author-details>.post-author-name {
+    width: 20%;
+    text-align: left;
+}
+
+#cont {
+    display: none;
+}
+
+.editor-post-input {
+    border: none;
+    text-align: center;
+}
+
+.editor-post-input-title {
+    font-size: 2 rem;
+    font-weight: bold;
+}

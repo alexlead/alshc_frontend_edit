@@ -1,0 +1,28 @@
+.alshc-edit-button {
+    white-space: nowrap;
+    background: #007cba;
+    border: 1px solid #007cba;
+    text-decoration: none;
+    text-shadow: none;
+    padding: 4px 12px;
+    font-weight: 400;
+    margin: 0 0 5px;
+    font-family: Arial;
+    position: fixed;
+    border-radius: 5px;
+    font-size: 17px;
+    z-index: 999999999999;
+    left: 15px;
+    bottom: 15px;
+}
+
+.alshc-edit-button>a {
+    display: block;
+    padding: 2px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.alshc-edit-button:hover {
+    opacity: 0.7;
+}
