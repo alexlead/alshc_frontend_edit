@@ -76,7 +76,7 @@ wp_enqueue_style('alshc-admin-style') ;
 		<div class="row">
 			<div class="cell">
 	<?php
-		echo $role['name'];
+		echo translate_user_role($role['name']);
 	?>	
 			</div>	
 			<div class="cell"> 

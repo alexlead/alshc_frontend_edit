@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WP FRONTEND PUBLISH EDITOR\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-27 21:02+0000\n"
+"POT-Creation-Date: 2021-03-28 17:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -28,6 +28,10 @@ msgstr ""
 
 #: admin/alshc_user_setting.php:20
 msgid "Create a page for Frontend Editor."
+msgstr ""
+
+#: alshc_frontend_edit.php:159
+msgid "Edit"
 msgstr ""
 
 #: admin/alshc_user_setting.php:61
@@ -72,7 +76,7 @@ msgstr ""
 msgid "Put below shortcode on the created page:"
 msgstr ""
 
-#: view/alshc_new_post_editor.php:145
+#: view/alshc_new_post_editor.php:122
 msgid "Put tags here - comma is for separation"
 msgstr ""
 
@@ -84,7 +88,7 @@ msgstr ""
 msgid "ROLES CAPABILITIES FOR EDITOR USE"
 msgstr ""
 
-#: admin/alshc_user_setting.php:105 view/alshc_new_post_editor.php:113
+#: admin/alshc_user_setting.php:105 view/alshc_new_post_editor.php:90
 msgid "SAVE"
 msgstr ""
 
@@ -111,7 +115,7 @@ msgstr ""
 msgid "Shortcode for adding system editor on frontend"
 msgstr ""
 
-#: view/alshc_new_post_editor.php:150
+#: view/alshc_new_post_editor.php:127
 msgid "Title of post"
 msgstr ""
 
@@ -129,8 +133,4 @@ msgstr ""
 
 #. Name of the plugin
 msgid "WP FRONTEND PUBLISH EDITOR"
-msgstr ""
-
-#: alshc_frontend_edit.php:132
-msgid "EDIT"
 msgstr ""

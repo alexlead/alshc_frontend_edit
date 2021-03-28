@@ -13,7 +13,7 @@ if (!defined('ABSPATH')) exit;
 
 // @get $_POST from frontend editor form  
 // @return array for post save to DB
-function prepare_post(){
+function alshc_prepare_post_for_db(){
     $post_data = array(   
         // post default data array
         // post modifed date 
@@ -60,7 +60,7 @@ function prepare_post(){
 // @return array with post id and errors
 function alshc_save_post(){
     // insert post to DB
-    $result['id'] = wp_insert_post(prepare_post(), true);
+    $result['id'] = wp_insert_post(alshc_prepare_post_for_db(), true);
     // add errors to array if isset
     if( is_wp_error( $result['id']) ){
         $result['error'] = $$result['id']->get_error_message();

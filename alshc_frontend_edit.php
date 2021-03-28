@@ -156,7 +156,7 @@ if( !function_exists( 'alshc_edit_post_link' ) ) {
                         if ( current_user_can('edit_others_posts') || $post_author['post_author'] == $tmp_current_user ) {
                             // prepare link
                             $res .= "<div class='alshc-edit alshc-edit-button'><a href='/?page_id=".$base_page."&alshc=edit&alshc_id=".$post_id."'>";
-                            $res .= translate( "Edit", "alshc-frontent-editor" );
+                            $res .= __( "Edit" , 'alshc-frontent-editor' );
                             $res .= "</a></div>";
                             
                         }
@@ -239,3 +239,11 @@ if(is_admin()){
     add_action('admin_menu', 'alshc_menu_config');
 
 }
+
+// add local file
+
+add_action( 'plugins_loaded', 'alshc_language_files_init' );
+function alshc_language_files_init(){
+	load_plugin_textdomain( 'alshc-frontent-editor', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' ); 
+}
+
