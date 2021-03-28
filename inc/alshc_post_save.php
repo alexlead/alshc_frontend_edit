@@ -1,5 +1,14 @@
 <?php 
 
+/**
+ * Save data: editor for adding|updating posts  
+ * 
+ * @author: Alex Lead
+ * @package: WP AL Frontend Editor 
+ * @version: 1.0.2
+ * 
+ */
+
 if (!defined('ABSPATH')) exit;
 
 // @get $_POST from frontend editor form  
@@ -17,7 +26,7 @@ function prepare_post(){
 
     // post ID setting - if post_id does not set @return NULL - for new post
     if(isset($_POST['post_id'])&&$_POST['post_id']>0){
-        $post_data['ID'] = $_POST['post_id'];
+        $post_data['ID'] = sanitize_key($_POST['post_id']);
     } else {
         $post_data['post_date'] = date('Y-m-d H:i:s');
     }
@@ -36,7 +45,7 @@ function prepare_post(){
     }
     // post tags - tags string 
     if (isset($_POST['post_tags'])){
-        $post_data['tags_input'] = explode(',', $_POST['post_tags']);
+        $post_data['tags_input'] = explode(',', sanitize_text_field($_POST['post_tags']));
     }
     // post content
     if (isset($_POST['post_content'])){

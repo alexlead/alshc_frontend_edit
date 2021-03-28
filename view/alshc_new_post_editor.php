@@ -1,8 +1,14 @@
 <?php
 
-/*
-View: editor for adding|updating posts 
-*/
+/**
+ * View: editor for adding|updating posts  
+ * 
+ * @author: Alex Lead
+ * @package: WP AL Frontend Editor 
+ * @version: 1.0.2
+ * 
+ */
+
 if (!defined('ABSPATH')) exit;
 
 wp_enqueue_media ();
@@ -104,7 +110,7 @@ if(isset($current_post_id)&&$current_post_id!=$base_page){
 			</a>
 		</div>
 		<div class='editor-button editor-submit-button'>
-			<input type="submit" class="post-submit post-editor-button" value="<?php echo _('Save') ;?>">
+			<input type="submit" class="post-submit post-editor-button" value="<?php _e( 'SAVE', 'alshc-frontent-editor' ); ?>">
 		</div>
 	</div>	
 		<?php 
@@ -136,12 +142,12 @@ if(isset($current_post_id)&&$current_post_id!=$base_page){
 						'class' => 'editor editor-post editor-post-name'	
 					)); ?>
 
-		<input type="text" class="editor editor-post editor-post-input" name="post_tags" placeholder="Put tags here - comma is for separation " value="<?php echo $post_edit['post_tags'];?>">
+		<input type="text" class="editor editor-post editor-post-input" name="post_tags" placeholder="<?php _e( 'Put tags here - comma is for separation', 'alshc-frontent-editor' ); ?>" value="<?php echo $post_edit['post_tags'];?>">
 		</div>
 	</div>	
 	
 	<div class='post-editor post-main'>
-		<input type="text" class="editor editor-post editor-post-input editor-post-input-title" name="post_title" placeholder="Start from Title" value="<?php echo $post_edit['post_title'];?>">
+		<input type="text" class="editor editor-post editor-post-input editor-post-input-title" name="post_title" placeholder="<?php _e( 'Title of post', 'alshc-frontent-editor' ); ?>" value="<?php echo $post_edit['post_title'];?>">
 
 		<textarea name="post_content" id="cont" cols="30" rows="10"><?php echo $post_edit['post_content'];?></textarea>
 

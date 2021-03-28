@@ -1,0 +1,136 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WP FRONTEND PUBLISH EDITOR\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-27 21:02+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.2; wp-5.5.3\n"
+"X-Domain: alshc-frontent-editor"
+
+#. Author of the plugin
+msgid "Alexander Lead"
+msgstr ""
+
+#: admin/alshc_user_setting.php:55
+msgid ""
+"ATTENTION! If user`s role has not a capability to edit to others posts, the "
+"user can not edit other posts too."
+msgstr ""
+
+#: admin/alshc_user_setting.php:20
+msgid "Create a page for Frontend Editor."
+msgstr ""
+
+#: admin/alshc_user_setting.php:61
+msgid "EDIT POST"
+msgstr ""
+
+#: admin/alshc_user_setting.php:63
+msgid "EDIT TO OTHERS POSTS"
+msgstr ""
+
+#: admin/alshc_user_setting.php:62
+msgid "EDIT TO PUBLISHED POSTS"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://codepen.io/alexlead/"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://github.com/alexlead/alshc_frontend_edit"
+msgstr ""
+
+#: admin/alshc_user_setting.php:41
+msgid "If you choose incorrect page then you can not edit to posts."
+msgstr ""
+
+#: admin/alshc_user_setting.php:25
+msgid "Let you make settings on below forms."
+msgstr ""
+
+#: admin/alshc_user_setting.php:54
+msgid ""
+"Please set capabilities on below table. Frontend editor is vissible for "
+"users with the capability of \"WP editor use\"."
+msgstr ""
+
+#: admin/alshc_user_setting.php:60
+msgid "PUBLISHING"
+msgstr ""
+
+#: admin/alshc_user_setting.php:21
+msgid "Put below shortcode on the created page:"
+msgstr ""
+
+#: view/alshc_new_post_editor.php:145
+msgid "Put tags here - comma is for separation"
+msgstr ""
+
+#: admin/alshc_user_setting.php:58
+msgid "ROLES"
+msgstr ""
+
+#: admin/alshc_user_setting.php:53
+msgid "ROLES CAPABILITIES FOR EDITOR USE"
+msgstr ""
+
+#: admin/alshc_user_setting.php:105 view/alshc_new_post_editor.php:113
+msgid "SAVE"
+msgstr ""
+
+#: admin/alshc_user_setting.php:23
+msgid "Select the created page on below form."
+msgstr ""
+
+#: admin/alshc_user_setting.php:40
+msgid "Select the page with Editor shortcode"
+msgstr ""
+
+#: admin/alshc_user_setting.php:39
+msgid "SET EDITOR PAGE"
+msgstr ""
+
+#: admin/alshc_user_setting.php:24
+msgid ""
+"Set roles capabilities on below table, turn on capability on \"WP editor "
+"use\" column. If a user has not capability then he will not have access to "
+"the Editor."
+msgstr ""
+
+#. Description of the plugin
+msgid "Shortcode for adding system editor on frontend"
+msgstr ""
+
+#: view/alshc_new_post_editor.php:150
+msgid "Title of post"
+msgstr ""
+
+#: admin/alshc_user_setting.php:59
+msgid "WP editor use"
+msgstr ""
+
+#: admin/alshc_user_setting.php:18
+msgid "WP FRONTEND EDITOR: MANUAL"
+msgstr ""
+
+#: admin/alshc_user_setting.php:27
+msgid "WP FRONTEND EDITOR: SETTINGS"
+msgstr ""
+
+#. Name of the plugin
+msgid "WP FRONTEND PUBLISH EDITOR"
+msgstr ""
+
+#: alshc_frontend_edit.php:132
+msgid "EDIT"
+msgstr ""

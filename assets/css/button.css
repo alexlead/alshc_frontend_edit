@@ -1,3 +1,12 @@
+/**
+ * Styles: editor for adding|updating posts  
+ * 
+ * @author: Alex Lead
+ * @package: WP AL Frontend Editor 
+ * @version: 1.0.2
+ *   
+ */
+
 .alshc-edit-button {
     white-space: nowrap;
     background: #007cba;

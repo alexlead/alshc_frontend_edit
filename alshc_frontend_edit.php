@@ -1,16 +1,18 @@
 <?php
 
-/* 
-* Plugin Name: WP FRONTEND PUBLISH EDITOR
-* Description: Shortcode for adding system editor on frontend
-* Plugin URI: https://github.com/alexlead/alshc_frontend_edit
-* Version: 1.0.0
-* Author: Alexander Lead
-* Author URI: https://codepen.io/alexlead/
-* Requires at least: 4.8
-* Tested up to: 5.6
-*
-*/
+/**
+ * Plugin Name: WP FRONTEND PUBLISH EDITOR
+ * Description: Shortcode for adding system editor on frontend
+ * Plugin URI: https://github.com/alexlead/alshc_frontend_edit
+ * Version: 1.0.2
+ * Author: Alexander Lead
+ * Author URI: https://codepen.io/alexlead/
+ * Requires at least: 4.8
+ * Tested up to: 5.7
+ * Text Domain: alshc-frontent-editor
+ * Domain Path: /languages/
+ *  
+ **/
 
 
 // Exit if accessed directly
@@ -126,7 +128,9 @@ if( !function_exists( 'alshc_edit_post_link' ) ) {
                         $tmp_current_user = get_current_user_id();
                         if ( current_user_can('edit_others_posts') || $post_author['post_author'] == $tmp_current_user ) {
                             // prepare link
-                            $res .= "<div class='alshc-edit alshc-edit-button'><a href='/?page_id=".$base_page."&alshc=edit&alshc_id=".$post_id."'>Edit</a></div>";
+                            $res .= "<div class='alshc-edit alshc-edit-button'><a href='/?page_id=".$base_page."&alshc=edit&alshc_id=".$post_id."'>";
+                            $res .= translate( "Edit", "alshc-frontent-editor" );
+                            $res .= "</a></div>";
                             
                         }
                     }

@@ -1,5 +1,14 @@
 <?php 
 
+/**
+ * Update options: editor for adding|updating posts  
+ * 
+ * @author: Alex Lead
+ * @package: WP AL Frontend Editor 
+ * @version: 1.0.2
+ * 
+ */
+
 if (!defined('ABSPATH')) exit;
 
 // function save changes in roles options to DB
@@ -7,7 +16,7 @@ function checkRolesCapabilities(){
 
     // save id of page with shortcode 
     if(isset($_POST['alshc_page_id'])){
-        add_option('alshc_page_shortcode',$_POST['alshc_page_id']);
+        update_option('alshc_page_shortcode',sanitize_key($_POST['alshc_page_id']));
     }
 
 

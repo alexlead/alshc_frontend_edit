@@ -1,3 +1,12 @@
+/**
+ * Styles: editor for adding|updating posts  
+ * 
+ * @author: Alex Lead
+ * @package: WP AL Frontend Editor 
+ * @version: 1.0.2
+ *   
+ */
+
 .editor-post {
     width: 100%;
     margin: 10px 0;
