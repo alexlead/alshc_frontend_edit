@@ -41,7 +41,7 @@ function prepare_post(){
     }
     // post category
     if (isset($_POST['post_category'])){
-        $post_data['post_category'] = array($_POST['post_category']);
+        $post_data['post_category'] = array(sanitize_key($_POST['post_category']));
     }
     // post tags - tags string 
     if (isset($_POST['post_tags'])){

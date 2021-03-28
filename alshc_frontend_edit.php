@@ -36,17 +36,44 @@ if ( ! defined( 'ALSHC_FE_EDITOR_PLUGIN_URL' ) ) {
 
 //---------------------- FRONTEND -------------------------
 
+// register scripts for frontend
+if( !function_exists( 'alshc_register_scripts' ) ) {
+
+    function alshc_register_scripts(){
+ 
+        wp_enqueue_script("alshc-script", ALSHC_FE_EDITOR_PLUGIN_URL.'/assets/js/script.js', array());
+        
+        // load Editor 
+        wp_enqueue_script( "alshc_wpimage" , ALSHC_FE_EDITOR_PLUGIN_URL."/assets/js/vendor/wpimage.js");
+        wp_enqueue_script( "alshc_underline" , ALSHC_FE_EDITOR_PLUGIN_URL."/assets/js/vendor/underline.js");
+        wp_enqueue_script( "alshc_delimiter" , ALSHC_FE_EDITOR_PLUGIN_URL."/assets/js/vendor/delimiter.js");
+        wp_enqueue_script( "alshc_embed" , ALSHC_FE_EDITOR_PLUGIN_URL."/assets/js/vendor/embed.js");
+        wp_enqueue_script( "alshc_header" , ALSHC_FE_EDITOR_PLUGIN_URL."/assets/js/vendor/header.js");
+        wp_enqueue_script( "alshc_image" , ALSHC_FE_EDITOR_PLUGIN_URL."/assets/js/vendor/image.js");
+        wp_enqueue_script( "alshc_link" , ALSHC_FE_EDITOR_PLUGIN_URL."/assets/js/vendor/link.js");
+        wp_enqueue_script( "alshc_list" , ALSHC_FE_EDITOR_PLUGIN_URL."/assets/js/vendor/list.js");
+        wp_enqueue_script( "alshc_marker" , ALSHC_FE_EDITOR_PLUGIN_URL."/assets/js/vendor/marker.js");
+        wp_enqueue_script( "alshc_paragraph" , ALSHC_FE_EDITOR_PLUGIN_URL."/assets/js/vendor/paragraph.js");
+        wp_enqueue_script( "alshc_quote" , ALSHC_FE_EDITOR_PLUGIN_URL."/assets/js/vendor/quote.js");
+        wp_enqueue_script( "alshc_htmltoeditjs" , ALSHC_FE_EDITOR_PLUGIN_URL."/assets/js/vendor/htmltoeditjs.js");
+        wp_enqueue_script( "alshc_editor" , ALSHC_FE_EDITOR_PLUGIN_URL."/assets/js/vendor/editor.js");
+        wp_enqueue_script( "alshc_edjsHTML" , ALSHC_FE_EDITOR_PLUGIN_URL."/assets/js/vendor/edjsHTML.browser.js");
+        
+    }
+}
+
 // getting empty editor form for shortcode
 if( !function_exists( 'alshc_post_editor_new_post' ) ) {
 
     function alshc_post_editor_new_post(){
 
         // register style files
-        wp_register_style('alshc-style', ALSHC_FE_EDITOR_PLUGIN_URL.'/assets/css/style.css', array(), '1.0', 'all');
+        wp_enqueue_style('alshc-style', ALSHC_FE_EDITOR_PLUGIN_URL.'/assets/css/style.css');
 
         // register js script files
-        wp_register_script("alshc-script", ALSHC_FE_EDITOR_PLUGIN_URL.'/assets/js/script.js', array());
-        
+        wp_enqueue_media ();
+        alshc_register_scripts();
+
         // check if we need to save a post
         if(isset($_POST['alshc_post_save'])&&$_POST['alshc_post_save']=='post_save'){
 

@@ -11,29 +11,6 @@
 
 if (!defined('ABSPATH')) exit;
 
-wp_enqueue_media ();
-
-//add EditorJs script
-
-echo "<script src='".ALSHC_FE_EDITOR_PLUGIN_URL."/assets/js/vendor/wpimage.js'></script>\n\r";
-
-echo "<script src='".ALSHC_FE_EDITOR_PLUGIN_URL."/assets/js/vendor/underline.js'></script>\n\r";
-echo "<script src='".ALSHC_FE_EDITOR_PLUGIN_URL."/assets/js/vendor/delimiter.js'></script>\n\r";
-echo "<script src='".ALSHC_FE_EDITOR_PLUGIN_URL."/assets/js/vendor/embed.js'></script>\n\r";
-echo "<script src='".ALSHC_FE_EDITOR_PLUGIN_URL."/assets/js/vendor/header.js'></script>\n\r";
-echo "<script src='".ALSHC_FE_EDITOR_PLUGIN_URL."/assets/js/vendor/image.js'></script>\n\r";
-echo "<script src='".ALSHC_FE_EDITOR_PLUGIN_URL."/assets/js/vendor/link.js'></script>\n\r";
-echo "<script src='".ALSHC_FE_EDITOR_PLUGIN_URL."/assets/js/vendor/list.js'></script>\n\r";
-echo "<script src='".ALSHC_FE_EDITOR_PLUGIN_URL."/assets/js/vendor/marker.js'></script>\n\r";
-echo "<script src='".ALSHC_FE_EDITOR_PLUGIN_URL."/assets/js/vendor/paragraph.js'></script>\n\r";
-echo "<script src='".ALSHC_FE_EDITOR_PLUGIN_URL."/assets/js/vendor/quote.js'></script>\n\r";
-echo "<script src='".ALSHC_FE_EDITOR_PLUGIN_URL."/assets/js/vendor/htmltoeditjs.js'></script>\n\r";
-echo "<script src='".ALSHC_FE_EDITOR_PLUGIN_URL."/assets/js/vendor/editor.js'></script>\n\r";
-echo "<script src='".ALSHC_FE_EDITOR_PLUGIN_URL."/assets/js/vendor/edjsHTML.browser.js'></script>\n\r";
-
-
-wp_enqueue_style('alshc-style') ;
-wp_enqueue_script('alshc-script') ;
 
 // empty form for new post  
 $post_edit['id'] = -1; 
@@ -149,7 +126,7 @@ if(isset($current_post_id)&&$current_post_id!=$base_page){
 	<div class='post-editor post-main'>
 		<input type="text" class="editor editor-post editor-post-input editor-post-input-title" name="post_title" placeholder="<?php _e( 'Title of post', 'alshc-frontent-editor' ); ?>" value="<?php echo $post_edit['post_title'];?>">
 
-		<textarea name="post_content" id="cont" cols="30" rows="10"><?php echo $post_edit['post_content'];?></textarea>
+		<textarea name="post_content" id="cont" cols="30" rows="10"><?php echo esc_html($post_edit['post_content']);?></textarea>
 
 	</div>
 
