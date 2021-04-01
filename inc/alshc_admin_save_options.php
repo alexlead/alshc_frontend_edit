@@ -12,7 +12,7 @@
 if (!defined('ABSPATH')) exit;
 
 // function save changes in roles options to DB
-function checkRolesCapabilities(){
+function alshc_checkRolesCapabilities(){
 
     // save id of page with shortcode 
     if(isset($_POST['alshc_page_id'])){
@@ -40,4 +40,4 @@ function checkRolesCapabilities(){
 
 }
 
-checkRolesCapabilities();
+alshc_checkRolesCapabilities();

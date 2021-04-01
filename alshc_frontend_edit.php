@@ -182,8 +182,7 @@ if( !function_exists( 'alshc_add_button_style' ) ) {
 
     function alshc_add_button_style(){
 
-        echo "<link rel='stylesheet'  href='".ALSHC_FE_EDITOR_PLUGIN_URL."/assets/css/button.css' type='text/css' media='all' />";
-
+		wp_enqueue_style('alshc-button-style', ALSHC_FE_EDITOR_PLUGIN_URL.'/assets/css/button.css');
     }
 
 }

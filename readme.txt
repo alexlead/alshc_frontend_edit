@@ -2,9 +2,9 @@
 Contributors: alexlead
 Donate link: https://sobe.ru/na/freeware_open_graph_headers_for_wp 
 Tags: Frontend Publish Editors for wp, wp, post, editor, publishing, frontend, wordpress
-Requires at least: 4.0
-Tested up to: 5.6
-Stable tag: 1.0.0
+Requires at least: 4.8
+Tested up to: 5.7
+Stable tag: 1.0.2
 License: GPL
 License URI: https://www.gnu.org/licenses/gpl-3.0.html 
 
